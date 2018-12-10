@@ -28,8 +28,9 @@
         <commons-io.version>1.3.2</commons-io.version>
         <commons-net.version>3.3</commons-net.version>
         <commons-logging.version>1.2</commons-logging.version>
-        <pagehelper.version>3.4.2</pagehelper.version>
-        <jsqlparser.version>0.9.1</jsqlparser.version>
+        <!-- pagehelper和jsqlparser版本一定得匹配 -->
+        <pagehelper.version>5.0.0</pagehelper.version>
+        <jsqlparser.version>0.9.5</jsqlparser.version>
         <commons-fileupload.version>1.3.1</commons-fileupload.version>
         <maven-compiler-plugin.version>3.5</maven-compiler-plugin.version>
         <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
@@ -44,7 +45,7 @@
             </activation>
             <properties>
                 <mysql.driverLocation>
-                    D:/Program Files/develop/apache-maven/repository/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar
+                    D:/Program Files/develop/apache-maven/repository/mysql/mysql-connector-java/${mysql.version}/mysql-connector-java-${mysql.version}.jar
                 </mysql.driverLocation>
                 <mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
                 <mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>
@@ -58,7 +59,7 @@
             <id>prd</id>
             <properties>
                 <mysql.driverLocation>
-                    D:/Program Files/develop/apache-maven/repository/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar
+                    D:/Program Files/develop/apache-maven/repository/mysql/mysql-connector-java/${mysql.version}/mysql-connector-java-${mysql.version}.jar
                 </mysql.driverLocation>
                 <mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
                 <mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>
