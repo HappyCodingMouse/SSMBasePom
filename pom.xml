@@ -51,7 +51,7 @@
                 <!--<mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>-->
                 <!--for mysql8-->
                 <mysql.driver>com.mysql.cj.jdbc.Driver</mysql.driver>
-                <mysql.url><![CDATA[jdbc:mysql://localhost:3306/jdbc01?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false]]></mysql.url>
+                <mysql.url><![CDATA[jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false]]></mysql.url>
                 <mysql.username>root</mysql.username>
                 <mysql.password>cmb#1234</mysql.password>
                 <log.file.dir>E:/log/dev</log.file.dir>
@@ -68,7 +68,7 @@
                 <!--<mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>-->
                 <!--for mysql8-->
                 <mysql.driver>com.mysql.cj.jdbc.Driver</mysql.driver>
-                <mysql.url><![CDATA[jdbc:mysql://localhost:3306/jdbc01?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false]]></mysql.url>
+                <mysql.url><![CDATA[jdbc:mysql://localhost:3306/test_db?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false]]></mysql.url>
                 <mysql.username>root</mysql.username>
                 <mysql.password>cmb#1234</mysql.password>
                 <log.file.dir>E:/log/prd</log.file.dir>
