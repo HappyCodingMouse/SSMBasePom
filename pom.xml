@@ -6,7 +6,7 @@
 
     <groupId>com.ssm.base</groupId>
     <artifactId>SSMBasePom</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -47,8 +47,11 @@
                 <mysql.driverLocation>
                     D:/Program Files/develop/apache-maven/repository/mysql/mysql-connector-java/${mysql.version}/mysql-connector-java-${mysql.version}.jar
                 </mysql.driverLocation>
+                <!--<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>-->
+                <!--<mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>-->
+                <!--for mysql8-->
                 <mysql.driver>com.mysql.cj.jdbc.Driver</mysql.driver>
-                <mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>
+                <mysql.url><![CDATA[jdbc:mysql://localhost:3306/jdbc01?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false]]></mysql.url>
                 <mysql.username>root</mysql.username>
                 <mysql.password>cmb#1234</mysql.password>
                 <log.file.dir>E:/log/dev</log.file.dir>
@@ -61,8 +64,11 @@
                 <mysql.driverLocation>
                     D:/Program Files/develop/apache-maven/repository/mysql/mysql-connector-java/${mysql.version}/mysql-connector-java-${mysql.version}.jar
                 </mysql.driverLocation>
+                <!--<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>-->
+                <!--<mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>-->
+                <!--for mysql8-->
                 <mysql.driver>com.mysql.cj.jdbc.Driver</mysql.driver>
-                <mysql.url>jdbc:mysql://localhost:3306/test_db?characterEncoding=utf-8</mysql.url>
+                <mysql.url><![CDATA[jdbc:mysql://localhost:3306/jdbc01?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false]]></mysql.url>
                 <mysql.username>root</mysql.username>
                 <mysql.password>cmb#1234</mysql.password>
                 <log.file.dir>E:/log/prd</log.file.dir>
